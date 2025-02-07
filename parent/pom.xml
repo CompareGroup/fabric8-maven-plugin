@@ -49,10 +49,10 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com/fabric8io/fabric8-maven-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/fabric8io/fabric8-maven-plugin.git</developerConnection>
+    <connection>scm:git:git://github.com/CompareGroup/fabric8-maven-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/CompareGroup/fabric8-maven-plugin.git</developerConnection>
     <tag>HEAD</tag>
-    <url>git://github.com/fabric8io/fabric8-maven-plugin.git</url>
+    <url>git://github.com/CompareGroup/fabric8-maven-plugin.git</url>
   </scm>
 
   <properties>
@@ -146,16 +146,21 @@
   </repositories>
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
     <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <id>comparegroup-nexus</id>
+      <!-- <url>http://bob.cgnet.nl/nexus/content/groups/public</url> -->
+      <url>http://nexus.m.cgnet.nl:8081/repository/All</url>
     </repository>
+<!--    <snapshotRepository>-->
+<!--      <id>sonatype-nexus-snapshots</id>-->
+<!--      <name>Sonatype Nexus Snapshots</name>-->
+<!--      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>-->
+<!--    </snapshotRepository>-->
+<!--    <repository>-->
+<!--      <id>sonatype-nexus-staging</id>-->
+<!--      <name>Nexus Release Repository</name>-->
+<!--      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+<!--    </repository>-->
   </distributionManagement>
 
   <dependencyManagement>
