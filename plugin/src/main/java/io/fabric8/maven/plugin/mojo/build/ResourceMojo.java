@@ -84,7 +84,7 @@ import static io.fabric8.maven.plugin.mojo.build.ResourceMojoUtil.writeResource;
  * Generates or copies the Kubernetes JSON file and attaches it to the build so its
  * installed and released to maven repositories like other build artifacts.
  */
-@Mojo(name = "resource", defaultPhase = LifecyclePhase.PROCESS_RESOURCES, requiresDependencyResolution = ResolutionScope.COMPILE)
+@Mojo(name = "resource", defaultPhase = LifecyclePhase.PROCESS_RESOURCES, requiresDependencyResolution = ResolutionScope.NONE)
 public class ResourceMojo extends AbstractFabric8Mojo {
     /**
      * Used to annotate a resource as being for a specific platform only such as "kubernetes" or "openshift"
