@@ -12,3 +12,5 @@ velocity.log
 /.metadata/
 /.recommenders/
 .factorypath
+*.releaseBackup
+release.properties
