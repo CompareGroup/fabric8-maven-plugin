@@ -153,7 +153,7 @@
       <url>http://nexus.m.cgnet.nl:8081/repository/CG_maven_releases/</url>
     </repository>
     <snapshotRepository>
-        <id>comparegroup-nexus-snapshots</id>
+      <id>comparegroup-nexus-snapshots</id>
 <!--         <url>http://bob.cgnet.nl/nexus/content/repositories/snapshots</url>-->
 <!--        <url>http://nexus.m.cgnet.nl:8081/repository/snapshots</url> -->       <url>http://nexus.m.cgnet.nl:8081/repository/CG_maven_snapshots/</url>
     </snapshotRepository>
@@ -842,6 +842,7 @@
                   <goal>jar</goal>
                 </goals>
                 <configuration>
+                  <skip>true</skip>
                   <!-- take that ... -->
                   <additionalparam>-Xdoclint:none</additionalparam>
                 </configuration>
