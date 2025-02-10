@@ -21,7 +21,7 @@
 
   <groupId>io.fabric8</groupId>
   <artifactId>fabric8-maven-plugin-parent</artifactId>
-  <version>4.5-CG4-SNAPSHOT</version>
+  <version>4.5-CG3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Fabric8 Maven :: Parent</name>
@@ -668,11 +668,11 @@
           <version>1.4.1</version>
         </plugin>
 
-         <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-javadoc-plugin</artifactId>
-           <version>2.10.3</version>
-         </plugin>
+<!--         <plugin>-->
+<!--           <groupId>org.apache.maven.plugins</groupId>-->
+<!--           <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--           <version>2.10.3</version>-->
+<!--         </plugin>-->
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -832,23 +832,23 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-                <configuration>
-                  <skip>true</skip>
-                  <!-- take that ... -->
-                  <additionalparam>-Xdoclint:none</additionalparam>
-                </configuration>
-              </execution>
-            </executions>
-          </plugin>
+<!--          <plugin>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--            <executions>-->
+<!--              <execution>-->
+<!--                <id>attach-javadocs</id>-->
+<!--                <goals>-->
+<!--                  <goal>jar</goal>-->
+<!--                </goals>-->
+<!--                <configuration>-->
+<!--                  <skip>true</skip>-->
+<!--                  &lt;!&ndash; take that ... &ndash;&gt;-->
+<!--                  <additionalparam>-Xdoclint:none</additionalparam>-->
+<!--                </configuration>-->
+<!--              </execution>-->
+<!--            </executions>-->
+<!--          </plugin>-->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
