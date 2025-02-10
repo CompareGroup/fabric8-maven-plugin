@@ -148,9 +148,15 @@
   <distributionManagement>
     <repository>
       <id>comparegroup-nexus</id>
-      <!-- <url>http://bob.cgnet.nl/nexus/content/groups/public</url> -->
-      <url>http://nexus.m.cgnet.nl:8081/repository/All</url>
+<!--       <url>http://bob.cgnet.nl/nexus/content/groups/public</url>-->
+<!--      <url>http://nexus.m.cgnet.nl:8081/repository/All</url>-->
+      <url>http://nexus.m.cgnet.nl:8081/repository/CG_maven_releases/</url>
     </repository>
+    <snapshotRepository>
+        <id>comparegroup-nexus-snapshots</id>
+<!--         <url>http://bob.cgnet.nl/nexus/content/repositories/snapshots</url>-->
+<!--        <url>http://nexus.m.cgnet.nl:8081/repository/snapshots</url> -->       <url>http://nexus.m.cgnet.nl:8081/repository/CG_maven_snapshots/</url>
+    </snapshotRepository>
 <!--    <snapshotRepository>-->
 <!--      <id>sonatype-nexus-snapshots</id>-->
 <!--      <name>Sonatype Nexus Snapshots</name>-->
